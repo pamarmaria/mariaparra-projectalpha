@@ -20,11 +20,11 @@
   
   <article>
     <section>
-      <img class="border-box" src="https://images.pexels.com/photos/10003548/pexels-photo-10003548.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="fotografía de Pau y Maria">
+      <img class="border-box" src="img/foto-prueba-1.jpg" alt="fotografía de Pau y Maria">
     </section>
     <section class="box border-box">
       <section class="margin-box">
-        <h2>Maria y Pau te dan la bienvenida.
+        <h2>Maria y Pau te dan la <i>bienvenida</i>.
         </h2>
         <p>Somos dos jóvenes emprendedores apasionados por el mundo digital, ambos <b>formados en el ámbito de la ciencia</b>. Lo que nunca imaginábamos es que nuestra vocación laboral desembocaría en internet.
         </p>
@@ -35,10 +35,10 @@
         <p> Si buscas:
         </p>
         <ul>
-          <li class="blue-text grey-border">Profesionalidad</li>
-          <li class="orange-text grey-border">Trato directo</li>
-          <li class="blue-text grey-border">Conocimiento del sector</li>
-          <li class="last-li orange-text grey-border">Personalización</li>
+          <li class="blue-text grey-border hover-grey">Profesionalidad</li>
+          <li class="orange-text grey-border hover-grey">Trato directo</li>
+          <li class="blue-text grey-border hover-grey">Conocimiento del sector</li>
+          <li class="last-li orange-text grey-border hover-grey">Personalización</li>
         </ul>
         <p class="big-bold-text">¡Eureka! Nos has encontrado.
         </p>
@@ -53,12 +53,12 @@
   
   <article id="aboutUs">
     <section>
-      <img class="border-box" src="https://media.istockphoto.com/id/921791656/es/foto/retrato-de-mujer-africana-sobre-fondo-negro.jpg?s=612x612&w=0&k=20&c=Uk0FLRFSI-djOhnXASIT6nbZ4APIIgSgoaa4du0rtSk=" alt="Pau">
-      <p class="box border-box box-title blue-box box-title-mono">Pau Aracil</p>
+      <img class="border-box" src="img/foto-prueba-2.jpg" alt="Pau">
+      <p class="box border-box box-title blue-box box-title-mono name-text">Pau Aracil</p>
     </section>
     <section>
-      <img class="border-box" src="https://media.istockphoto.com/id/921791656/es/foto/retrato-de-mujer-africana-sobre-fondo-negro.jpg?s=612x612&w=0&k=20&c=Uk0FLRFSI-djOhnXASIT6nbZ4APIIgSgoaa4du0rtSk=" alt="Maria">
-      <p class="box border-box box-title orange-box box-title-mono">Maria Parra</p>
+      <img class="border-box" src="img/foto-prueba-2.jpg" alt="Maria">
+      <p class="box border-box box-title orange-box box-title-mono name-text">Maria Parra</p>
     </section>
   </article>
   
@@ -73,30 +73,30 @@
         <li class="orange-text grey-box white-border">Diseño UX/UI</li>
         <li class="blue-text grey-box white-border">Desarrollo Web</li>
         <li class="orange-text grey-box white-border">Gestión de Redes Sociales</li>
-        <li class="blue-text grey-box white-border">Posicionamiento SEO</li>
+        <li class="last-li blue-text grey-box white-border">Posicionamiento SEO</li>
       </ul>
     </section>
   </article>
   
   <article id="contact">
     <h2 class="box border-box box-title contact-background orange-text">CONTACTA CON NOSOTROS</h2>
-    <section class="box border-box">
-      <section class="name">
-        <label class="form" for="name"><b>Nombre</b></label>
-        <input class="form" type="text" placeholder="Laura" id="name">
+    <form class="box border-box grey-box">
+      <section class="content margin-box ">
+        <label for="name">Nombre</label>
+        <input type="text" placeholder="Laura" id="name">
       </section>
-      <section class="email">
-        <label class="form" for="email"><b>Correo</b></label>
-        <input class="form" type="email" placeholder="ejemplo@gmail.com" id="email" disabled>
+      <section class="content margin-box">
+        <label for="mail">Correo electrónico</label>
+        <input type="email" placeholder="ejemplo@gmail.com" id="mail">
       </section>
-      <section class="message">
-        <label class="form" for="message"><b>Mensaje</b></label>
-        <input class="form" type="text" placeholder="Escribe aquí en qué te gustaría que te ayudásemos" id="message">
+      <section class="content margin-box">
+        <label for="msg">Mensaje</label>
+        <textarea type="text" placeholder="Escribe aquí en qué te gustaría que te ayudásemos" id="msg"></textarea>
       </section>
-      <section class="submit">
-        <button class="form backgroundBlue" type="submit" name="enviar"><p>Enviar mensaje</p></button>
+      <section class="content margin-box">
+        <button class="blue-box" type="submit" name="enviar"><p>Enviar mensaje</p></button>
       </section>
-    </section>
+    </form>
   </article>
     
   <article>
@@ -105,12 +105,24 @@
     </section>
     <section class="box">
       <ul class="margin-box socialMedia">
-        <li class="grey-border">Instagram</li>
-        <li class="grey-border">Pinterest</li>
+        <section class="icon-text grey-border">
+          <img class="icon" src="img/icono-instagram.png" alt="Icono Instagram">
+          <li>Instagram</li>
+        </section>
+        <section class="icon-text grey-border">
+          <img class="icon" src="img/icono-pinterest.png" alt="Icono Pinterest">
+          <li>Pinterest</li>
+        </section>
       </ul>
       <ul class="margin-box socialMedia">
-        <li class="grey-border">Twitter</li>
-        <li class="last-li grey-border">LikedIn</li>
+        <section class="icon-text grey-border">
+          <img class="icon" src="img/icono-twitter.png" alt="Icono Twitter">
+          <li>Twitter</li>
+        </section>
+        <section class="last-li icon-text grey-border">
+          <img class="icon" src="img/icono-linkedin.png" alt="Icono LikedIn">
+          <li>LikedIn</li>
+        </section>
       </ul>
   </article>
 
