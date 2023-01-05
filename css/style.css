@@ -15,7 +15,7 @@ h1, h2, h3 {
   
 h2 {
   font-size: 2em;
-  line-height: 30px; 
+  line-height: 30px;
 }
   
 h3 {
@@ -96,7 +96,7 @@ button > p {
 
 .big-bold-text {
   font-weight: 500;
-  font-size: 1.2em;
+  font-size: 1.4em;
   line-height: 25px; 
 }
   
@@ -130,6 +130,13 @@ button > p {
   justify-content: center;
   align-items: center;
   padding: 30px 30px;
+  text-align: center;
+}
+
+.title-center {
+  justify-content: center;
+  align-items: center;
+  padding: 30px 30px 0 30px;
   text-align: center;
 }
   
@@ -183,12 +190,12 @@ button > p {
 
 .white-border {
   border-color: #F2F2F2;
-  border-width: 4px 4px 0 4px;
+  border-width: 4px 0 0 0;
   border-style: solid;
 }
 
 .name-text::after {
-  content: "Haz click aquí o en mi foto para saber más sobre mi";
+  content: "Haz click en mi foto para saber más sobre mí";
   color: black;
   font-size: 0.4em;
   line-height: 15px;
@@ -200,13 +207,15 @@ button > p {
 .icon-text {
   display: flex;
   align-items: center;
-  justify-content: left;
-  padding-left: 20%;
+  justify-content: center;
 }
 
 .icon {
-  width: 15%;
-  height: 15%;
+  width: 12%;
+  height: 12%;
+  display: flex;
+  align-items: center;
+  justify-content: left;
 }
   
 .last-li {
@@ -214,10 +223,6 @@ button > p {
 }
 
 /* Locura de hovers */
-
-.hover-grey:hover, .hover-grey:active {
-  background-color: #343434;
-}
 
 button:hover {
   background-color: #FF6666;
@@ -227,18 +232,63 @@ input:focus,textarea:focus {
   border: solid 2px #FF6666;
 }
 
+.hover-box:hover,.hover-box:active {
+  background-color: #7F97FF;
+}
+
+.foto-maria, .foto-pau {
+  height: 60%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: block;
+  align-items: center;
+  justify-content: right;
+  padding: 50px;
+}
+
+.foto-maria {
+  background-image: url("../img/foto-prueba-2.jpg");
+}
+
+.foto-pau {
+  background-image: url("../img/foto-prueba-2.jpg");
+}
+
+.foto-maria > p,.foto-pau > p {
+  visibility: hidden;
+}
+
+.foto-maria:hover,.foto-maria:active {
+  background-image: url("../img/foto-prueba-3.png");
+}
+
+.foto-pau:hover,.foto-pau:active {
+  background-image: url("../img/foto-prueba-3.png");
+}
 
 
+.foto-maria:hover > p,.foto-pau:hover > p {
+  visibility: visible;
+}
+
+
+/* Media queries */
+
+@media (min-width: 500px) {
+  .icon {
+    width: 8%;
+    height: 8%;
+  }
+  body {
+    margin: 60px 40px;
+  }
+}
 
 
   
   
-/* Todo esto de aquí abajo creo que lo tendré que poner para un móvil algo más grande
-
-Además, tendré que hacer algo para que no tengan margen, porque en el móvil peque peque lo he puesto
-igual que están las fortalezas y los servicios.
-
-Comprobar que todas las clases estén bien!
+/* 
 
   .socialMedia {
     display: flex;
@@ -265,3 +315,7 @@ Comprobar que todas las clases estén bien!
   } 
 
   */
+
+
+
+

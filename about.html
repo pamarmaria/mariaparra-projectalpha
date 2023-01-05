@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <title>About Us</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <title>About Us</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;500&family=Roboto:ital,wght@0,900;1,900&display=swap" rel="stylesheet">
 </head>
@@ -35,29 +35,46 @@
         <p> Si buscas:
         </p>
         <ul>
-          <li class="blue-text grey-border hover-grey">Profesionalidad</li>
-          <li class="orange-text grey-border hover-grey">Trato directo</li>
-          <li class="blue-text grey-border hover-grey">Conocimiento del sector</li>
-          <li class="last-li orange-text grey-border hover-grey">Personalización</li>
+          <li class="blue-text grey-border">Profesionalidad</li>
+          <li class="orange-text grey-border">Trato directo</li>
+          <li class="blue-text grey-border">Conocimiento del sector</li>
+          <li class="last-li orange-text grey-border">Personalización</li>
         </ul>
-        <p class="big-bold-text">¡Eureka! Nos has encontrado.
+        <p class="big-bold-text"><i>¡Eureka!</i> Nos has encontrado.
         </p>
       </section>
     </section>
   </article>
   
   <article>
-    <a class="box border-box box-title orange-box box-title-mono" href="#contact">CONTACTA</a>
-    <a class="box border-box box-title box-title-mono" href="#aboutUs">CONOCE NUESTRA TRAYECTORIA</a>
+    <a class="box border-box box-title orange-box box-title-mono hover-box" href="#contact">CONTACTA</a>
+    <a class="box border-box box-title box-title-mono hover-box" href="#aboutUs">CONOCE NUESTRA TRAYECTORIA</a>
   </article>
   
   <article id="aboutUs">
     <section>
-      <img class="border-box" src="img/foto-prueba-2.jpg" alt="Pau">
+      <div class="border-box foto-pau">
+        <p>
+          Hello! Bienvenido a mi tostón y gracias de antemano por leerlo.
+        </p>
+        <p>
+          Siempre me ha apasionado practicar todo tipo deportes, y es por esto que en esa etapa de inmadurez total en la que te obligan a elegir tu profesión futura, “un Pau muy inmaduro” eligió estudiar Licenciatura en Ciencias de la Actividad Física y Deporte, con un posterior Master en Dirección y Gestión de Actividades Deportivas. Tras numerosos intentos laborales trabajando en distintas especialidades, descubrí que mi vocación laboral no iba unida a mi pasión por la práctica deportiva en mi vida personal. 
+        </p>
+        <p>
+          Pasado el tiempo, un “Pau más maduro” por fin descubrió que el tipo de trabajo que podría desempeñar dentro del sector digital, combinado con la calidad de vida que brinda el día a día esa profesión, sería lo que lo seduciría para siempre (laboralmente hablando, claro).
+        </p>
+      </div>
       <p class="box border-box box-title blue-box box-title-mono name-text">Pau Aracil</p>
     </section>
     <section>
-      <img class="border-box" src="img/foto-prueba-2.jpg" alt="Maria">
+      <div class="border-box foto-maria">
+        <p>
+          ¡Hola! Soy Maria, una chica apasionada por la <b>ciencia y la tecnología</b>. Después de graduarme en <b>Bioquímica y Ciencias Biomédicas</b>, decidí seguir mis estudios y obtener un Máster en Criminología y Ciencias Forenses. Sin embargo, durante la pandemia mi vida dio un vuelco (como la de todos, imagino) y me empecé a interesar por el mundo digital. Así que decidí tomar un <b>nuevo rumbo en mi carrera</b>.
+        </p>
+        <p>
+          Actualmente me dedico al <b>Diseño UX/UI y al Desarrollo Web</b>, y estoy constantemente formándome en estas áreas. Estoy emocionada de poder aplicar mis conocimientos en ciencia a proyectos innovadores y creativos y me encantaría que el tuyo fuera uno de ellos.
+        </p>
+      </div>
       <p class="box border-box box-title orange-box box-title-mono name-text">Maria Parra</p>
     </section>
   </article>
@@ -73,7 +90,7 @@
         <li class="orange-text grey-box white-border">Diseño UX/UI</li>
         <li class="blue-text grey-box white-border">Desarrollo Web</li>
         <li class="orange-text grey-box white-border">Gestión de Redes Sociales</li>
-        <li class="last-li blue-text grey-box white-border">Posicionamiento SEO</li>
+        <li class="blue-text grey-box white-border">Posicionamiento SEO</li>
       </ul>
     </section>
   </article>
@@ -83,15 +100,15 @@
     <form class="box border-box grey-box">
       <section class="content margin-box ">
         <label for="name">Nombre</label>
-        <input type="text" placeholder="Laura" id="name">
+        <input class="grey-box" type="text" placeholder="Laura" id="name">
       </section>
       <section class="content margin-box">
         <label for="mail">Correo electrónico</label>
-        <input type="email" placeholder="ejemplo@gmail.com" id="mail">
+        <input class="grey-box" type="email" placeholder="ejemplo@gmail.com" id="mail">
       </section>
       <section class="content margin-box">
         <label for="msg">Mensaje</label>
-        <textarea type="text" placeholder="Escribe aquí en qué te gustaría que te ayudásemos" id="msg"></textarea>
+        <textarea class="grey-box" type="text" placeholder="Escribe aquí en qué te gustaría que te ayudásemos" id="msg"></textarea>
       </section>
       <section class="content margin-box">
         <button class="blue-box" type="submit" name="enviar"><p>Enviar mensaje</p></button>
@@ -100,7 +117,7 @@
   </article>
     
   <article>
-    <section class="box box-title">
+    <section class="box title-center">
       <h2>ENCUÉNTRANOS EN REDES SOCIALES</h2>
     </section>
     <section class="box">
