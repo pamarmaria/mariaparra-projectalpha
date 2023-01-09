@@ -14,12 +14,12 @@ h1, h2, h3 {
 }
   
 h2 {
-  font-size: 2em;
+  font-size: 1.8em;
   line-height: 30px;
 }
   
 h3 {
-  font-size: 1.7em;
+  font-size: 1.5em;
 }
   
 p {
@@ -62,12 +62,14 @@ input, textarea {
   display: block;
   width: 100%;
   margin: 5px 0 25px 0;
-  padding: 10px;
   box-sizing: border-box;
   border: solid 2px #F2F2F2;
   box-shadow: 0;
   outline: 0 none;
+}
 
+input {
+  padding: 10px;
 }
 
 textarea {
@@ -86,8 +88,25 @@ button {
 button > p {
   padding: 0;
 }
+
+footer {
+  padding: 20px 25px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
   
 /* Utilities */
+
+li > p {
+  margin: 0;
+  padding: 0;
+}
+
+.paddingTopBottom {
+  padding: 30px 0;
+}
 
 .foto-portada {
   height: 40vh;
@@ -136,13 +155,6 @@ button > p {
   padding: 30px 30px;
   text-align: center;
 }
-
-.title-center {
-  justify-content: center;
-  align-items: center;
-  padding: 30px 30px 0 30px;
-  text-align: center;
-}
   
 .box-title-mono {
   text-decoration: none;
@@ -175,7 +187,7 @@ button > p {
 }
   
 .contact-background {
-  background-image: url("../img/foto-telefono.jpg");
+  background-image: url("../img/foto-telefono.JPG");
   height: 60vh;
   background-repeat: no-repeat;
   background-position: center;
@@ -185,7 +197,7 @@ button > p {
   justify-content: center;
   color: #FF6666;
 }
-  
+
 ul.grey-border {
   border-color: #343434;
   border-width: 4px 4px 0 4px;
@@ -210,6 +222,7 @@ ul.grey-border {
   display: flex;
   align-items: center;
   justify-content: left;
+  margin: 0 20px 0 0;
 }
 
 /* No me funciona esto :( 
@@ -263,40 +276,42 @@ input:focus,textarea:focus {
   background-color: #7F97FF;
 }
 
+
 .foto-maria, .foto-pau {
-  height: 60%;
+  height: fit-content;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  display: block;
+  padding: 25px;
+  display: flex;
   align-items: center;
-  justify-content: right;
-  padding: 50px;
+  justify-content: center;
 }
 
 .foto-maria {
-  background-image: url("../img/foto-prueba-2.jpg");
+  background-image: url("../img/maria-def.JPG");
 }
 
 .foto-pau {
-  background-image: url("../img/foto-prueba-2.jpg");
+  background-image: url("../img/pau-def.JPG");
 }
 
-.foto-maria > p,.foto-pau > p {
+.foto-maria > .parrafos,.foto-pau > .parrafos {
   visibility: hidden;
 }
 
 .foto-maria:hover,.foto-maria:active {
-  background-image: url("../img/foto-prueba-3.png");
+  background-image: url("../img/maria-white-def.png");
 }
 
 .foto-pau:hover,.foto-pau:active {
-  background-image: url("../img/foto-prueba-3.png");
+  background-image: url("../img/pau-white-def.png");
 }
 
 
-.foto-maria:hover > p,.foto-pau:hover > p {
+.foto-maria:hover > .parrafos,.foto-pau:hover > .parrafos {
   visibility: visible;
+  font-size: 0.9em;
 }
 
 .grey-hover:hover {
@@ -315,6 +330,10 @@ input:focus,textarea:focus {
   body {
     margin: 60px 40px;
   }
+
+  .foto-maria:hover > .parrafos,.foto-pau:hover > .parrafos {
+    font-size: 1em;
+  }
 }
 
 @media (max-width: 900px) {
@@ -327,7 +346,67 @@ input:focus,textarea:focus {
   }
 }
 
+@media (min-width: 650px) {
+
+  footer {
+    padding: 20px 100px;
+  }
+
+  .icon {
+    width: 20%;
+    height: 100%;
+  }
+
+  .socialMedia {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .socialMedia > li{
+    flex: 50%;
+    box-sizing: border-box;
+  }
+
+  ul.socialMedia {
+    border-color: #343434;
+    border-width: 4px 4px 4px 4px;
+    border-style: solid;
+  }
+
+  .social.grey-border-left-bottom {
+    border-color: #343434;
+    border-width: 0 0 2px 2px;
+    border-style: solid;
+  }
+
+  .social.grey-border-right-bottom {
+    border-color: #343434;
+    border-width: 0 2px 2px 0;
+    border-style: solid;
+  }
+
+  .social.grey-border-left-top {
+    border-color: #343434;
+    border-width: 2px 0 0 2px;
+    border-style: solid;
+  }
+
+  .social.grey-border-right-top {
+    border-color: #343434;
+    border-width: 2px 2px 0 0;
+    border-style: solid;
+  }
+
+  .foto-maria, .foto-pau {
+    padding: 30px;
+    height: 100vh;
+  }
+
+}
+
+
 @media (min-width: 900px) {
+
   body {
     margin: 80px;
   }
@@ -342,6 +421,10 @@ input:focus,textarea:focus {
     line-height: 35px;
   }
 
+  footer {
+    padding: 20px 200px;
+  }
+
   .big-box-reverse {
     display: flex;
     flex-direction: row-reverse;
@@ -354,7 +437,7 @@ input:focus,textarea:focus {
     justify-content: center;
   }
 
-  .big-box-reverse > section, .big-box > section, .big-box > a {
+  .big-box-reverse > div, .big-box > div, .big-box > a {
     flex: 1;
   }
 
@@ -379,9 +462,30 @@ input:focus,textarea:focus {
     border-style: solid;
   }
 
+  .contact-background {
+    height: 100%;
+    box-sizing: border-box;
+  }
+
+  .content {
+    margin: 10px 50px;
+  }
+
+  .foto-maria, .foto-pau {
+    padding: 50px;
+  }
+
+  input, textarea {
+    margin: 5px 0 5px 0;
+  }
 }
 
 @media (min-width: 1215px) {
+
+  .icon {
+    width: 10%;
+    height: 100%;
+  }
 
   .row {
     display: flex;
@@ -423,39 +527,38 @@ input:focus,textarea:focus {
     border-style: solid;
   }
 
+  .white-border-left-bottom {
+    border-color: #F2F2F2;
+    border-width: 0 0 2px 2px;
+    border-style: solid;
+  }
+
+  .white-border-right-bottom {
+    border-color: #F2F2F2;
+    border-width: 0 2px 2px 0;
+    border-style: solid;
+  }
+
+  .white-border-left-top {
+    border-color: #F2F2F2;
+    border-width: 2px 0 0 2px;
+    border-style: solid;
+  }
+
+  .white-border-right-top {
+    border-color: #F2F2F2;
+    border-width: 2px 2px 0 0;
+    border-style: solid;
+  }
+
 }
 
+@media (min-width: 1300px) {
 
-  
-  
-/* 
-
-  .socialMedia {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0;
+  footer {
+    padding: 20px 350px;
   }
-
-  .socialMedia > li {
-    text-align: center;
-    flex: 1;
-    display: block;
-    border-color: #343434;
-    border-style: solid;
-    margin: 0;
-  }
-  
-  .socialMedia > li:nth-child(1) {
-    border-width: 4px 2px 0 0;
-  }
-  
-  .socialMedia > li:nth-child(2) {
-    border-width: 4px 0 0 2px;
-  } 
-
-  */
-
+}
 
 
 
