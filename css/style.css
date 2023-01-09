@@ -10,7 +10,7 @@ body {
 h1, h2, h3 {
   font-family: Roboto;
   margin: 0;
-  padding: 20px 0 20px 0;
+  padding: 20px 0;
 }
   
 h2 {
@@ -88,6 +88,10 @@ button > p {
 }
   
 /* Utilities */
+
+.foto-portada {
+  height: 40vh;
+}
 
 .content {
   display: block;
@@ -182,7 +186,7 @@ button > p {
   color: #FF6666;
 }
   
-.grey-border {
+ul.grey-border {
   border-color: #343434;
   border-width: 4px 4px 0 4px;
   border-style: solid;
@@ -193,16 +197,6 @@ button > p {
   border-width: 4px 0 0 0;
   border-style: solid;
 }
-
-.name-text::after {
-  content: "Haz click en mi foto para saber más sobre mí";
-  color: black;
-  font-size: 0.4em;
-  line-height: 15px;
-  margin-top: 10px;
-}
-
-/* Esto de arriba quitarlo en desktop, porque al pasar el cursor ya lo verán */
 
 .icon-text {
   display: flex;
@@ -217,10 +211,43 @@ button > p {
   align-items: center;
   justify-content: left;
 }
-  
-.last-li {
-  border-width: 4px;
+
+/* No me funciona esto :( 
+
+li[class^="grey-border-"] {
+  border-color: #343434;
+  border-width: 0 0 4px 0;
+  border-style: solid;
 }
+
+*/
+
+/* Y si lo hago de esta manera es muuuuy largo */
+
+.grey-border-left-bottom {
+  border-color: #343434;
+  border-width: 0 0 4px 0;
+  border-style: solid;
+}
+
+.grey-border-left-top {
+  border-color: #343434;
+  border-width: 0 0 4px 0;
+  border-style: solid;
+}
+
+.grey-border-right-bottom {
+  border-color: #343434;
+  border-width: 0 0 4px 0;
+  border-style: solid;
+}
+
+.grey-border-right-top {
+  border-color: #343434;
+  border-width: 0 0 4px 0;
+  border-style: solid;
+}
+
 
 /* Locura de hovers */
 
@@ -272,6 +299,11 @@ input:focus,textarea:focus {
   visibility: visible;
 }
 
+.grey-hover:hover {
+  background-color: #343434;
+  color: white;
+}
+
 
 /* Media queries */
 
@@ -283,6 +315,114 @@ input:focus,textarea:focus {
   body {
     margin: 60px 40px;
   }
+}
+
+@media (max-width: 900px) {
+  .name-text::after {
+    content: "Haz click en mi foto para saber más sobre mí";
+    color: black;
+    font-size: 0.4em;
+    line-height: 15px;
+    margin-top: 10px;
+  }
+}
+
+@media (min-width: 900px) {
+  body {
+    margin: 80px;
+  }
+
+  h2 {
+    font-size: 2.7em;
+    line-height: 45px;
+  }
+    
+  h3 {
+    font-size: 2.3em;
+    line-height: 35px;
+  }
+
+  .big-box-reverse {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+  }
+
+  .big-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .big-box-reverse > section, .big-box > section, .big-box > a {
+    flex: 1;
+  }
+
+  .margin-box {
+    margin: 50px;
+  }
+
+  .foto-portada {
+    box-sizing: border-box;
+    height: 100%;
+  }
+  
+  .border-left {
+    border-color: #343434;
+    border-width: 0 0 0 4px;
+    border-style: solid;
+  }
+
+  .border-left-bottom {
+    border-color: #343434;
+    border-width: 0 0 4px 4px;
+    border-style: solid;
+  }
+
+}
+
+@media (min-width: 1215px) {
+
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .row > li{
+    flex: 50%;
+    box-sizing: border-box;
+  }
+
+  ul.grey-border {
+    border-color: #343434;
+    border-width: 4px 4px 4px 4px;
+    border-style: solid;
+  }
+
+  .grey-border-left-bottom {
+    border-color: #343434;
+    border-width: 0 0 2px 2px;
+    border-style: solid;
+  }
+
+  .grey-border-right-bottom {
+    border-color: #343434;
+    border-width: 0 2px 2px 0;
+    border-style: solid;
+  }
+
+  .grey-border-left-top {
+    border-color: #343434;
+    border-width: 2px 0 0 2px;
+    border-style: solid;
+  }
+
+  .grey-border-right-top {
+    border-color: #343434;
+    border-width: 2px 2px 0 0;
+    border-style: solid;
+  }
+
 }
 
 
