@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="ed">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <title>About Us</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;500&family=Roboto:ital,wght@0,900;1,900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  
+  <header>
+
+    <h1 class="container container__header background--blue">SOBRE NOSOTROS
+    </h1>
+
+  </header>
+
+  <main>
+
+    <div class="container container__main--reverse">
+      <div class="container__main--image border-between--bottom">
+        <img class="image image__computer" src="img/primer-ordenador-1.jpg" alt="Fotografía de uno de los primeros ordenadores">
+      </div>
+      <div class="container__main--content content content__intro border-between--right">
+        <h2>Maria y Pau te dan la <i>bienvenida</i>.
+        </h2>
+        <p>Somos dos jóvenes emprendedores apasionados por el mundo digital, ambos <b>formados en el ámbito de la ciencia</b>. Lo que nunca imaginábamos es que nuestra vocación laboral desembocaría en internet.
+        </p>
+        <p>Creemos firmemente en el <b>poder del cambio digital para impulsar el avance y el progreso en proyectos científicos</b>, y queremos ayudarte a alcanzar tus objetivos a través de nuestro conocimiento.
+        </p>
+        <p> Si buscas:
+        </p>
+        <ul class="list">
+          <li class="list__element1 text--blue">Profesionalidad</li>
+          <li class="list__element2 text--orange">Trato directo</li>
+          <li class="list__element3 text--blue">Conocimiento del sector</li>
+          <li class="list__element4 text--orange">Personalización</li>
+        </ul>
+        <p class="text--big"><b><i>¡Eureka!</i> Nos has encontrado.</b>
+        </p>
+      </div>
+    </div>
+
+    <div class="container container__main">
+      <a class="btn-contact background--orange border-between" href="#contactUs">CONTACTA</a>
+      <a class="btn-about" href="#aboutUs">CONÓCENOS</a>
+    </div>
+
+    <div class="container container__main" id="aboutUs">
+      <div class="container__main--about border-between">
+        <div class="image image__pau">
+          <div class="content content__about">
+            <p>
+              Hello! Bienvenido a mi tostón y gracias de antemano por leerlo.
+            </p>
+            <p>
+              Siempre me ha apasionado practicar todo tipo deportes y es por esto que, en esa etapa en la que te obligan a elegir tu profesión futura, decidí estudiar <b>Licenciatura en Ciencias de la Actividad Física y Deporte</b>. Pero más tarde descubrí que mi vocación laboral no iba unida a mi pasión por la práctica deportiva en mi vida personal.
+            </p>
+            <p>
+              Pasado el tiempo, un “Pau más maduro” por fin descubrió que el tipo de trabajo que podría desempeñar dentro del sector digital sería lo que lo seduciría para siempre. Tomé la decisión y  me formé en todo tipo de herramientas que envuelven al <b>Marketing Digital</b>.
+            </p>
+          </div>
+        </div>
+        <div class="background--blue">
+          <p class="content__name">Pau Aracil</p>
+        </div>
+      </div>
+      <div class="container__main--content">
+        <div class="image image__maria">
+          <div class="content content__about">
+            <p>
+              ¡Hola! Soy Maria, una chica apasionada por la ciencia y la tecnología. Después de graduarme en <b>Bioquímica y Ciencias Biomédicas</b>, decidí seguir mis estudios y obtener un Máster en Criminología y Ciencias Forenses. Sin embargo, durante la pandemia me empecé a interesar por el mundo digital. Así que decidí tomar un nuevo rumbo en mi carrera.
+            </p>
+            <p>
+              Actualmente me dedico al <b>Diseño UX/UI y al Desarrollo Web</b>, y estoy constantemente formándome en estas áreas. Estoy emocionada de poder aplicar mis conocimientos en ciencia a proyectos innovadores y creativos y me encantaría que el tuyo fuera uno de ellos.
+            </p>
+          </div>
+        </div>
+        <div class="background--orange">
+          <p class="content__name">Maria Parra</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="container__main--reverse container__main--content">
+        <div class="content content__science">
+          <h3 class=""><i>¿Quién ha dicho que la ciencia es aburrida?</i></h3>
+          <p>Nuestro objetivo es crear espacios digitales que conecten con el público: <b>entreteniendo, divulgando y generando curiosidad</b>.</p>
+        </div>
+        <div class="content content__services border-between--right">
+          <p class=""><b>Te ayudamos con</b></p>
+          <ul class="list list--black">
+            <li class="list__element1--black text--orange">Diseño UX/UI</li>
+            <li class="list__element2--black text--blue">Desarrollo Web</li>
+            <li class="list__element3--black text--orange">Gestión de Redes Sociales</li>
+            <li class="list__element4--black text--blue">Posicionamiento SEO</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="container container__main" id="contactUs">
+      <div class="container__main--image image image__phone border-between">
+        <h2 class="text--orange">CONTACTA CON NOSOTROS</h2>
+      </div>
+      <form class="container__main--form form background--black">
+        <div>
+          <label for="name">Nombre</label>
+          <input class="form__input background--black required" type="text" placeholder="Laura" id="name">
+        </div>
+        <div>
+          <label for="mail">Correo electrónico</label>
+          <input class="form__input background--black required" type="email" placeholder="ejemplo@gmail.com" id="mail">
+        </div>
+        <div>
+          <label for="msg">Mensaje</label>
+          <textarea class="form__textarea background--black required" type="text" placeholder="Escribe aquí en qué te gustaría que te ayudásemos" id="msg"></textarea>
+        </div>
+        <div>
+          <button class="form__btn" type="submit" name="enviar"><p>Enviar mensaje</p></button>
+        </div>
+      </form>
+    </div>
+
+  </main>
+  
+  <footer class="container container__footer">
+
+    <h2>ENCUÉNTRANOS EN REDES SOCIALES</h2>
+    <div class="social">
+      <a class="social__element1 black-hover" href="https://www.instagram.com/" target="_blank">
+        <img class="icon" src="img/icono-instagram.svg" alt="Icono Instagram">
+        Instagram
+      </a>
+      <a class="social__element2 black-hover" href="https://www.pinterest.es/" target="_blank">
+        <img class="icon" src="img/icono-pinterest.svg" alt="Icono Pinterest">
+        Pinterest
+      </a>
+      <a class="social__element3 black-hover" href="https://www.twitter.com/" target="_blank">
+        <img class="icon" src="img/icono-twitter.svg" alt="Icono Twitter">
+        Twitter
+      </a>
+      <a class="social__element4 black-hover" href="https://www.linkedin.com/" target="_blank">
+        <img class="icon" src="img/icono-linkedin.svg" alt="Icono LikedIn">
+        LikedIn
+      </a>
+    </div>
+    
+  </footer>
+
+</body>
+</html> 
